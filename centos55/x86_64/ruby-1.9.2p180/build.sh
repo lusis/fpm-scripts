@@ -12,7 +12,7 @@ wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p180.tar.gz
 tar -zxvf ruby-1.9.2-p180.tar.gz -C buildroot
 
 # build
-cd buildroot
+cd buildroot/ruby-1.9.2-p180/
 ./configure --prefix=/usr
 make
 make install DESTDIR=../../installtmp
