@@ -21,7 +21,10 @@ cd ../../../installtmp/
 fpm --prefix=/opt -s dir -t rpm -n python-carbon -v 0.9.7 -C opt -p python-carbon-0.9.7.x86_64.rpm \
 	-d "python" \
 	-d "python-twisted 10.2.0" \
-	-d "python-txamqp 0.4"
+	-d "python-txamqp 0.4" \
+	-d "pycairo 1.2.0" \
+	-d "memcached 1.4.5" \
+	-d "python-ldap 2.2.0" 
 
 # verify
 rpm -qip --filesbypkg python-carbon-0.9.7.x86_64.rpm
